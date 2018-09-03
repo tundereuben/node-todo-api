@@ -47,6 +47,7 @@ describe('POST /todos', () => {
         }).catch((e) => done(e));
       });
   });
+
   it('Should not create todo with invalid body data', (done) => {
     request(app)
       .post('/todos')
